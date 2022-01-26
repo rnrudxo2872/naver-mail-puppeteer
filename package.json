@@ -1,0 +1,25 @@
+{
+  "name": "macro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "deploy": "npm run build && pkg index.js",
+    "exec": "npm run deploy && index-win.exe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "geckodriver": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.4",
+    "puppeteer": "^13.1.1",
+    "selenium-webdriver": "^4.1.1",
+    "typescript": "^4.5.5"
+  }
+}
